@@ -1,4 +1,4 @@
-# LiveBall-Speed-and-Trajectoryct that uses a custom-trained YOLOv8 model to de
+# LiveBall-Speed-and-Trajectoryct that uses a custom-trained YOLOv8 model to detect ball , calculate the speed , creates a trajectory of the ball
 
 LiveBall Speed and Trajectory is a computer vision-based projetect a cricket ball in a video, track its motion, and estimate its speed and trajectory using real-world calibration.
 
