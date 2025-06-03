@@ -1,6 +1,6 @@
-# LiveBall-Speed-and-Trajectory
+# LiveBall-Speed-and-Trajectoryct that uses a custom-trained YOLOv8 model to de
 
-LiveBall Speed and Trajectory is a computer vision-based project that uses a custom-trained YOLOv8 model to detect a cricket ball in a video, track its motion, and estimate its speed and trajectory using real-world calibration.
+LiveBall Speed and Trajectory is a computer vision-based projetect a cricket ball in a video, track its motion, and estimate its speed and trajectory using real-world calibration.
 
 ![image](https://github.com/user-attachments/assets/1918670a-75f5-4daf-aacd-2c758bea8902)
 
@@ -10,31 +10,30 @@ LiveBall Speed and Trajectory is a computer vision-based project that uses a cus
 
 # Model
 This project uses a custom-trained YOLOv8 model (CBDbest.pt) trained specifically on cricket ball data from this repo:
-👉 https://github.com/HarshSingh18/CV_Project/tree/main
+
+ https://github.com/HarshSingh18/CV_Project/tree/main
 
 
 # Requirements
 Install all dependencies from requirements.txt:
 
 
-pip install -r requirements.txt
-
-Make sure you have Python 3.8+ and OpenCV-compatible FFMPEG codecs installed.
+<tab><tab>pip install -r requirements.txt
 
 # Features
-Detects a cricket ball in each frame using YOLOv8
+1.Detects a cricket ball in each frame using YOLOv8
 <br>
-Tracks the ball’s motion over time
+2.Tracks the ball’s motion over time
 <br>
-Calculates ball speed using pixel-to-meter calibration
+3.Calculates ball speed using pixel-to-meter calibration
 <br>
-Draws the trajectory and bounding boxes in real-time
+4.Draws the trajectory and bounding boxes in real-time
 <br>
-Overlays the final speed on the last frame
+5.Overlays the final speed on the last frame
 <br>
-Outputs a new video (output.avi) with full annotations
+6.Outputs a new video (output.avi) with full annotations
 <br>
-Logs all frame-wise ball speeds to the terminal
+7.Logs all frame-wise ball speeds to the terminal
 
 
 # FOLDER STRUCTURE
@@ -46,7 +45,7 @@ Logs all frame-wise ball speeds to the terminal
    
 Use pix.py to manually select two points (typically the crease lines on a cricket pitch) and compute the pixel distance corresponding to the real-world pitch length (20.12 meters).
 
-python pix.py
+<tab><tab>python pix.py
 
 
 This gives you a scale:
@@ -55,21 +54,21 @@ meters_per_pixel = 20.12 / pixel_distance
 # 2. Ball Tracking & Speed Estimation
 Run the main script on your input video. It uses the YOLO model (CBDbest.pt) to detect the ball, track its path, and compute its speed.
 
-python track\&speed.py
+<tab><tab>python track\&speed.py
 
 This will:
 
-Detect the cricket ball in each frame.
+1.Detect the cricket ball in each frame.
 <br>
-Draw its trajectory.
+2.Draw its trajectory.
 <br>
-Estimate the speed using frame-to-frame movement.
+3.Estimate the speed using frame-to-frame movement.
 <br>
-Save the annotated video as output.avi inside the root directory.
+4.Save the annotated video as output.avi inside the root directory.
 <br>
-Show final ball speed in a black frame for 3 seconds at the end of the video.
+5.Show final ball speed in a black frame for 3 seconds at the end of the video.
 <br>
-Print all tracked speeds in the terminal.
+6.Print all tracked speeds in the terminal.
 <br>
 
 
