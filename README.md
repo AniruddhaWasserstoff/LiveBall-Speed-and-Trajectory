@@ -17,8 +17,8 @@ This project uses a custom-trained YOLOv8 model (CBDbest.pt) trained specificall
 # Requirements
 Install all dependencies from requirements.txt:
 
-
-<tab>pip install -r requirements.txt<tab>
+##
+pip install -r requirements.txt
 
 # Features
 1.Detects a cricket ball in each frame using YOLOv8
