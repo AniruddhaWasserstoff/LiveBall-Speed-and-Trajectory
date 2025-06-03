@@ -44,18 +44,18 @@ pip install -r requirements.txt
 # 1. Pixel Calibration
    
 Use pix.py to manually select two points (typically the crease lines on a cricket pitch) and compute the pixel distance corresponding to the real-world pitch length (20.12 meters).
-
-<tab><tab>python pix.py
-
+```
+python pix.py
+```
 
 This gives you a scale:
 meters_per_pixel = 20.12 / pixel_distance
 
 # 2. Ball Tracking & Speed Estimation
 Run the main script on your input video. It uses the YOLO model (CBDbest.pt) to detect the ball, track its path, and compute its speed.
-
-<tab><tab>python track\&speed.py
-
+```
+python track\&speed.py
+```
 This will:
 
 1.Detect the cricket ball in each frame.
