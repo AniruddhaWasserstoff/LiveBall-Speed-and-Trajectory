@@ -18,7 +18,6 @@ This project uses a custom-trained YOLOv8 model (CBDbest.pt) trained specificall
 Install all dependencies from requirements.txt:
 
 ```
- bash
 pip install -r requirements.txt
 ```
 # Features
