@@ -36,7 +36,7 @@ pip install -r requirements.txt
 7.Logs all frame-wise ball speeds to the terminal
 
 
-# FOLDER STRUCTURE
+# Folder structure
 
 ![image](https://github.com/user-attachments/assets/292a5ac6-777a-4150-9753-7ec3d4444258)
 
